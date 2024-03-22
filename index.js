@@ -2322,8 +2322,8 @@ app.post('/generatepdf', (req, res) => {
   convertHtmlToPdf(html)
     .then((pdfBuffer) => {
       // Save the PDF buffer to a file or do something else with it
-      console.log('PDF generated successfully');
-      fs.writeFileSync(pdfFilePath, pdfBuffer);
+      // console.log('PDF generated successfully');
+      // fs.writeFileSync(pdfFilePath, pdfBuffer);
       console.log(`PDF saved successfully: ${pdfFilePath}`);
       // Set the appropriate headers for PDF response
       res.setHeader('Content-Type', 'application/pdf');
